@@ -1,0 +1,26 @@
+{
+  "name": "fastify-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "nodemon --exec ts-node src/server.ts",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ./dist/server.js",
+    "build": "tsc -p tsconfig.json"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "fastify": "^4.17.0",
+    "fastify-cli": "^5.7.1",
+    "fastify-plugin": "^4.5.0",
+    "ts-node": "^10.9.1",
+    "typescript": "^5.0.4"
+  },
+  "devDependencies": {
+    "@types/node": "^20.2.3",
+    "nodemon": "^2.0.22"
+  }
+}
