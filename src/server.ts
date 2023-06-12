@@ -21,7 +21,6 @@ start();
 // Handle the signals and do a graceful shutdown
 const exitHandler = async (signal: NodeJS.Signals) => {
   console.log(`Received signal to terminate: ${signal}`);
-
   await fastify.close();
   process.exit(0);
 };
